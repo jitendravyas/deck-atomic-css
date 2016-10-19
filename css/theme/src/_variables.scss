@@ -1,0 +1,37 @@
+$font-serif: athelas, georgia, times, serif !default;
+$font-sans-serif: avenir next, avenir, helvetica, helvetica neue, ubuntu, roboto, noto, segoe ui, arial, sans-serif !default;
+
+$base-font-size: 16px !default;
+$slide-font-size: 2.5rem !default;
+
+$font-family: $font-sans-serif !default;
+$line-height: 1.5 !default;
+$caps-letter-spacing: .1em !default;
+
+$h1: 2.5em !default;
+$h2: 1.5em !default;
+$h3: 1.25em !default;
+$h4: 1em !default;
+$h5: .875em !default;
+$h6: .75em !default;
+
+$space-1: .5rem !default;
+$space-2: 1rem !default;
+$space-3: 2rem !default;
+$space-4: 4rem !default;
+
+$heading-font-family: $font-sans-serif !default;
+$heading-font-weight: 700 !default;
+$heading-margin-top: 0 !default;
+$heading-margin-bottom: .5em !default;
+$paragraph-margin-top: 0 !default;
+$paragraph-margin-bottom: $space-2 !default;
+
+$body-color: #000 !default;
+$body-background-color: #fff !default;
+
+$link-color: #2a76dd !default;
+$link-color-hover: lighten($link-color, 15%) !default;
+
+$selection-color: #fff !default;
+$selection-background-color: lighten($link-color, 25%) !default;
