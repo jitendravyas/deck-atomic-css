@@ -28,11 +28,11 @@ $bold-font-weight: bold !default;
 
 .caps    { text-transform: uppercase; letter-spacing: $caps-letter-spacing; }
 
-.left-align   { text-align: left }
+.tl   { text-align: left }
 
-.center       { text-align: center }
+.tc { text-align: center }
 
-.right-align  { text-align: right }
+.tr  { text-align: right }
 
 .justify      { text-align: justify }
 
