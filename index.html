@@ -47,8 +47,8 @@
 
       <section>
         <h2>What is it?</h2>
-        <p class='mb3'>tiny, single-purpose, immutable classes</p>
-        <p class='mb3'>think of them as ingredients that can combined to make delicious dishes 🍩🍕🍰🍝</p>
+        <p>tiny, single-purpose, immutable classes</p>
+        <p>think of them as ingredients that can combined to make delicious dishes 🍩🍕🍰🍝</p>
         <pre><code class="html" data-trim>
 <p class="red center">guess what? this text is red and centered!</p>
         </code></pre>
@@ -108,13 +108,139 @@
 
       <section>
         <h2>What problems does this solve?</h2>
-        <p class='mb3'>building and maintaining good CSS is really hard & time-consuming</p>
-        <p class='mb3'>new product feature ➡️ additional UI components or variants needed ➡️ more CSS added ➡️ repeat 😢</p>
+        <p>building and maintaining good CSS is really hard & time-consuming</p>
+        <p>new product feature ➡️ additional UI components or variants needed ➡️ more CSS added ➡️ repeat 😢</p>
         <p>the best CSS is the least CSS possible</p>
       </section>
 
       <section class='center'>
         <h2 class='m0 h1 tc'>Benefits</h2>
+      </section>
+
+      <section>
+        <h2>Create new UI components with no new CSS (!!!)</h2>
+        <p>the stylesheet starts small and stays that way</p>
+        <p>no more writing (and rewriting) CSS</p>
+        <p>atomic classes can be mixed and matched to create thousands of new UI without adding to or even opening a stylesheet</p>
+      </section>
+
+      <section>
+        <h2>Performant</h2>
+        <p>BassCSS 2.3kb (minified and gzipped)</p>
+        <p>USWDS 10.5kb, Bootstrap 23.7kb, Foundation 31.2kb</p>
+        <p>smaller stylesheet ➡️ faster websites ➡️ happier users</p>
+      </section>
+
+      <section>
+        <h2>Developer velocity</h2>
+        <p>no more digging through code to see what components are there and how they change contextually</p>
+        <p>no need to debug CSS if you’re writing CSS</p>
+      </section>
+
+      <section>
+        <h2>Naming things is hard</h2>
+        <p>and now it’s unnecessary!</p>
+        <p>atomic calls ’em like it sees ’em</p>
+        <div><code>.bg-red</code> = background red</div>
+        <div><code>.m2</code> = margin of 2 spacing units</div>
+        <div><code>.bold</code> = any guesses??</div>
+      </section>
+
+      <section>
+        <h2>Predictable</h2>
+        <p>one class = one responsibility = easy to predict what adding or removing a class will do</p>
+        <pre><code class="html" data-trim>
+<span class="py1 px2 bg-blue white caps bold">hi there!</span>
+        </code></pre>
+        <span class="py1 px2 bg-blue white caps bold">hi there!</span>
+      </section>
+
+      <section>
+        <h2>Straightforward</h2>
+        <p>simple, obvious classes are easy to use and internalize</p>
+        <p>bonus: you know what components will look like just by reading the markup</p>
+        <div class='h6'><code>img class="circle border"</code> vs. <code>img class="profile-pic"</code></div>
+      </section>
+
+      <section>
+        <h2>Reusable</h2>
+        <p>classes that describe content can only be used where that content exists</p>
+        <p>classes that describes a visual pattern can be used in any context</p>
+      </section>
+
+      <section>
+        <h2>Encapsulation is your best friend</h2>
+        <p>flat list of classes means no more worrying about global scope, specificity wars, overrides, descendant/contextual selectors</p>
+        <p>by encapsulating work in an individual block of html, you can refactor with the confidence you aren't breaking anything else</p>
+        <p>bonus: this means components are 100% portable</p>
+      </section>
+
+      <section>
+        <h2>Beginner friendly</h2>
+        <p>writing efficient and robust CSS is difficult</p>
+        <p>reusing small, existing classes simplifies the learning curve and democratizes the design process 🇺🇸</p>
+      </section>
+
+      <section>
+        <h2>Brings engineers and designers together</h2>
+        <p>the DOM becomes a design tool</p>
+        <p>designers can jump in the code & engineers can influence design decisions and everyone is now speaking a shared language</p>
+      </section>
+
+      <section class='center'>
+        <h2 class='m0 h1 tc'>Common questions</h2>
+      </section>
+
+      <section>
+        <h2>Doesn’t this makes the DOM ugly?</h2>
+        <p>TODO</p>
+      </section>
+
+      <section>
+        <h2>What if I have to change something on a hundred different pages?</h2>
+        <p>TODO</p>
+      </section>
+
+      <section>
+        <h2>How is this better / different than inline styles?</h2>
+        <p>TODO</p>
+      </section>
+
+      <section>
+        <h2>Is this semantic?</h2>
+        <p>TODO</p>
+      </section>
+
+      <section>
+        <h2>Aren’t you just moving complexity to the markup?</h2>
+        <p>TODO</p>
+      </section>
+
+      <section>
+        <h2>Atomic friends</h2>
+        <p>Medium, Yahoo, Wealthfront, Buzzfeed, Facebook, login.gov, etc.</p>
+        <p>(TODO: make this a logo grid with links that click through to relevant article / site)</p>
+      </section>
+
+      <section>
+        <h2>Dogma is dangerous</h2>
+        <p>we have to continually examine and update our best practices</p>
+        <p>not saying atomic is perfect, but definitely worth a try</p>
+        <blockquote class='mt3'>
+          <p>What the hell do you have to lose?</p>
+          <footer>- Donald Trump 😳</a>
+          </footer>
+        </blockquote>
+      </section>
+
+      <section class='center tc'>
+        <img src="img/logo-taco-bell.jpg" alt="taco bell">
+        <p class='mt1'>think outside the stylesheet</p>
+      </section>
+
+      <section class='center tc'>
+        <img src="img/peace-emoji.gif" alt="thanks!">
+        <p class='mt1'>thank you!</p>
       </section>
 
     </div>
@@ -128,6 +254,7 @@
     history: true,
     slideNumber: true,
     transition: 'none',
+    width: 1000,
 
     dependencies: [
       {
