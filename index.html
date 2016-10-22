@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <title>TODO</title>
+  <title>Atomic CSS :: Deck</title>
   <link rel="stylesheet" href="css/reveal.css">
   <link rel="stylesheet" href="lib/css/highlight/github-gist.css">
   <link rel="stylesheet" href="css/theme/dist/main.css">
@@ -217,14 +217,44 @@
       </section>
 
       <section>
-        <h2>Atomic friends</h2>
-        <p>Medium, Yahoo, Wealthfront, Buzzfeed, Facebook, login.gov, etc.</p>
-        <p>(TODO: make this a logo grid with links that click through to relevant article / site)</p>
+        <h2>In the wild</h2>
+        <div class="clearfix mxn1">
+          <div class="col col-6 sm-col-4 px1 mb2">
+            <a class="p2 block border rounded card-img" target="_blank" href="#">
+              <img src="img/logo-medium.png">
+            </a>
+          </div>
+          <div class="col col-6 sm-col-4 px1 mb2">
+            <a class="p2 block border rounded card-img" target="_blank" href="#">
+              <img src="img/logo-facebook.jpg">
+            </a>
+          </div>
+          <div class="col col-6 sm-col-4 px1 mb2">
+            <a class="p2 block border rounded card-img" target="_blank" href="#">
+              <img src="img/logo-yahoo.png">
+            </a>
+          </div>
+          <div class="col col-6 sm-col-4 px1 mb2">
+            <a class="p2 block border rounded card-img" target="_blank" href="#">
+              <img src="img/logo-buzzfeed.png">
+            </a>
+          </div>
+          <div class="col col-6 sm-col-4 px1 mb2">
+            <a class="p2 block border rounded card-img" target="_blank" href="#">
+              <img src="img/logo-wealthfront.png">
+            </a>
+          </div>
+          <div class="col col-6 sm-col-4 px1 mb2">
+            <a class="p2 block border rounded card-img" target="_blank" href="#">
+              <img src="img/logo-logingov.svg">
+            </a>
+          </div>
+        </div>
       </section>
 
       <section>
         <h2>Dogma is dangerous</h2>
-        <p>we have to continually examine and update our best practices</p>
+        <p>we should continually examine and update our best practices</p>
         <p>not saying atomic is perfect, but definitely worth a try</p>
         <blockquote class='mt3'>
           <p>What the hell do you have to lose?</p>
@@ -244,6 +274,19 @@
       </section>
 
     </div>
+    <img class='logo-18f' src='img/logo-18f.png' width='40' height='40'>
+    <div class='nav-controls'>
+      <button class="btn btn-outline btn-icon px0 navigate-left">
+        <svg class="icon" data-icon="left" viewBox="0 0 32 32" fill="#000">
+          <path d="M20 1 L24 5 L14 16 L24 27 L20 31 L6 16 z"></path>
+        </svg>
+      </button>
+      <button class="btn btn-outline btn-icon px0 navigate-right">
+        <svg class="icon" data-icon="right" viewBox="0 0 32 32" fill="#000">
+          <path d="M12 1 L26 16 L12 31 L8 27 L18 16 L8 5 z"></path>
+        </svg>
+      </button>
+    </div>
   </div>
   <script src="lib/js/head.min.js"></script>
   <script src="js/reveal.js"></script>
@@ -252,7 +295,7 @@
     center: false,
     controls: false,
     history: true,
-    slideNumber: true,
+    slideNumber: false,
     transition: 'none',
     width: 1000,
 

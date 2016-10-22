@@ -31,6 +31,10 @@ $paragraph-margin-bottom: $space-2 !default;
 $body-color: #000 !default;
 $body-background-color: #fff !default;
 
+$button-padding-y: .5rem !default;
+$button-padding-x: .75rem !default;
+$button-background-color: #000 !default;
+
 $link-color: #2a76dd !default;
 $link-color-hover: lighten($link-color, 15%) !default;
 
