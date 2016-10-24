@@ -21,12 +21,9 @@
   <div class="reveal">
     <div class="slides">
 
-      <!-- <section class='center' data-background-iframe="misc/particle-viz.html"> -->
       <section class='center'>
         <h1 class='m0 h0 tc'>Atomic CSS</h1>
-        <aside class="notes">
-          <p>Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).</p>
-        </aside>
+        <h3 class='regular tc'>Learning to love presentational classes</h3>
       </section>
 
       <section class='center'>
@@ -37,8 +34,7 @@
           </footer>
         </blockquote>
         <blockquote>
-          <p>Two css properties walk into a bar.</p>
-          <p>A barstool in a completely different bar falls over.</p>
+          <p>Two css properties walk into a bar.<br>A barstool in a completely different bar falls over.</p>
           <footer>
             <a class="black" target="_blank" href="https://twitter.com/thomasfuchs/status/493790680397803521">- @thomasfuchs</a>
           </footer>
@@ -47,8 +43,8 @@
 
       <section>
         <h2>What is it?</h2>
-        <p>Tiny, single-purpose, immutable classes</p>
-        <p>Think of them as ingredients that can combined to make delicious dishes 🍩🍕🍰🍝</p>
+        <p><strong>Truly atomic design.</strong> Atomic CSS is a  system of tiny, single-purpose, immutable presentational classes</p>
+        <p><strong>They’re made for combination.</strong> Think of them as ingredients, which can be combined to make delicious dishes 🍩🍕🍰🍝</p>
         <pre class='mt3'><code class="html" data-trim>
 <p class="red underline right-align">I’m red, underlined, and on the right!</p>
         </code></pre>
@@ -56,11 +52,11 @@
       </section>
 
       <section>
-        <h2>Food for thought</h2>
-        <p>Atomic classes are ingredients</p>
-        <p>Atomic library, like BassCSS, is a well stocked pantry</p>
-        <p>With this set of ingredients, you can cook anything you'd like (UI component)</p>
-        <p>A pattern / component library is the cookbook; you can follow recipes exactly, or improvise with ease</p>
+        <h2>Food for thought?</h2>
+        <p><strong>Ingredients.</strong> Atomic classes are your ingredients</p>
+        <p><strong>Pantry.</strong> An atomic library, like BassCSS or Tachyons, is a well-stocked pantry</p>
+        <p><strong>Recipe.</strong> With this fixed, reliable pantry, you can cook all kinds of things (UI components)</p>
+        <p><strong>Cookbook.</strong> A pattern / component library is a cookbook filled with recipes and variations; you can follow the recipes exactly or improvise with ease</p>
       </section>
 
       <section>
@@ -70,35 +66,31 @@
             <div class="mb1">Traditional</div>
             <pre><code class="html" data-trim>
 <div class='someCard'>
-  <h2>headline!</h2>
+  <h2>...</h2>
 </div>
             </code></pre>
             <pre><code class="css" data-trim>
 .someCard {
-  margin-top: $space-1;
-  margin-bottom: $space-2;
+  margin-bottom: $space-1;
   padding: $space-2;
   background-color: $blue;
-  color: $white;
   border-radius: 3px;
 
-  h2 { margin-top: $space-1; }
+  h2 { margin-bottom: $space-1; }
 }
             </code></pre>
           </div>
           <div class="col col-6 px1">
             <div class="mb1">Atomic</div>
             <pre><code class="html" data-trim>
-<div class="mt1 mb2 p2 bg-blue white rounded">
-  <h2 class="mt1">headline!</h2>
+<div class="mb1 p2 bg-blue rounded">
+  <h2 class="mb1">...</h2>
 </div>
             </code></pre>
             <pre><code class="css" data-trim>
-.mt1 { margin-top: $space-1 }
 .mb1 { margin-bottom: $space-1 }
 .p2 { padding: $space-2 }
 .bg-blue { background-color: $blue }
-.white { color: $white }
 .rounded { border-radius: 3px }
             </code></pre>
           </div>
@@ -108,9 +100,11 @@
       <section>
         <h2>What problems does this solve?</h2>
         <p><strong>Overhead.</strong> Building and maintaining good CSS is really hard and time-consuming</p>
-        <p><strong>Communication.</strong> It can be hard for designers and developers to speak a common language, and hard for anyone to understand unfamiliar CSS</p>
-        <p><strong>Incompleteness.</strong> New product feature ➡️ additional UI components or variants needed ➡️ more CSS added ➡️ repeat 😢</p>
+        <p><strong>Incompleteness and bloat.</strong> New product feature ➡️ additional UI components or variants needed ➡️ more CSS added ➡️ repeat 😢</p>
         <p><strong>Complexity.</strong> The best CSS is the least CSS possible</p>
+        <p><strong>Communication.</strong> It can be hard for designers and developers to speak a common language, and for anyone to understand unfamiliar CSS</p>
+        
+        
       </section>
 
       <section class='center'>
@@ -119,16 +113,17 @@
 
       <section>
         <h2>Create new UI components with no new CSS (!!!)</h2>
-        <p>The stylesheet starts small and stays that way</p>
-        <p>No more writing / rewriting / editing CSS again</p>
-        <p>Atomic classes can be mixed and matched to create a highly expressive array of new UI components without adding to or even opening a stylesheet</p>
+        <p><strong>Efficient.</strong> The stylesheet starts small and stays that way</p>
+        <p><strong>Direct.</strong> No more writing (and rewriting) CSS</p>
+        <p><strong>Expressive.</strong> Atomic classes can be combined to create a highly expressive array of new UI components without adding to or even opening a stylesheet</p>
+        <p><strong>Never edit a stylesheet again.</strong> Never edit a stylesheet again.</p>
       </section>
 
       <section>
         <h2>Performant</h2>
         <p>BassCSS is 2.3kb (minified and gzipped)</p>
         <p>USWDS 10.5kb, Bootstrap 23.7kb, Foundation 31.2kb (and these will only grow!)</p>
-        <p>smaller stylesheet ➡️ faster websites ➡️ happier users</p>
+        <p>smaller stylesheet ➡️ faster websites ➡️ happier users (and developers)</p>
       </section>
 
       <section>
@@ -141,16 +136,17 @@
         <h2>Naming things is hard</h2>
         <p>(and now unnecessary!)</p>
         <p>Atomic calls ’em like it sees ’em</p>
-        <div><code class='blue'>.bg-red</code> = background red</div>
-        <div><code class='blue'>.m2</code> = margin of 2 spacing units</div>
-        <div><code class='blue'>.bold</code> = any guesses? 😏</div>
+        <div class='mt4'>
+          <div><code class='blue'>.bg-red</code> = <span class='bold'>b</span>ack<span class='bold'>g</span>round <span class='bold'>red</span></div>
+          <div><code class='blue'>.m2</code> = <span class='bold'>m</span>argin of <span class='bold'>2</span> spacing units</div>
+          <div><code class='blue'>.bold</code> = any guesses? 😏</div>
+        </div>
       </section>
 
       <section>
         <h2>Predictable</h2>
-        <p><strong>Static and clear.</strong> Classes are explicit and immutable</p>
-        <p><strong>You had one job.</strong> one class = one responsibility</p>
-        <p><strong>Reliable.</strong> It's almost too easy to predict what adding or removing a class with do</p>
+        <p><strong>"You had one job!"</strong> one class = one responsibility</p>
+        <p><strong>Reliable.</strong> It's easy to predict what adding or removing a class will do</p>
         <pre><code class="html" data-trim>
 <span class="py1 px2 bg-blue white caps bold">hi there!</span>
         </code></pre>
@@ -184,13 +180,13 @@
       <section>
         <h2>Beginner-friendly</h2>
         <p><strong>Scrap the complexity.</strong> Writing efficient and robust CSS is tough</p>
-        <p><strong>Democratize design.</strong> A small, fixed, descriptive system of classes simplifies the conceptual overhead, lessens the learning curve, and can democratize the design process 🇺🇸</p>
+        <p><strong>Democratize design.</strong> A small, fixed, descriptive system of classes simplifies the conceptual overhead, lessens the learning curve, and democratizes the design process 🇺🇸</p>
       </section>
 
       <section>
         <h2>Bring engineers and designers together</h2>
         <p><strong>Nothing lost in translation.</strong> Designers can step in the code and engineers can influence design decisions</p>
-        <p>When everyone is speaking a common language, deliverables are much more straightforward</p>
+        <p>When everyone is speaking a common design language, deliverables are much more straightforward</p>
         <p>Added bonus: the DOM is now a design tool</p>
       </section>
 
@@ -206,26 +202,27 @@
       <section>
         <h2>What if I have to change something on a hundred different pages?</h2>
         <p><strong>Whoops! You may other problems.</strong> If this worries you, I'm worried about your templating architecture.<p>
-        <p><strong>Stay DRY.</strong> If the markup for something is defined multiple times across templates, don’t repeat yourself. The code should be consolidated to a single place.</p>
+        <p><strong>Stay DRY.</strong> If the markup for a component is defined multiple times across templates, don’t repeat yourself. The code should be consolidated to a single place.</p>
       </section>
 
       <section>
         <h2>How is this better than inline styles?</h2>
         <p><strong>More comprehensive.</strong> Inline styles do not support media queries or pseudo elements</p>
-        <p><strong>One to many.</strong> Inline styles are 1:1 for element styles; a class is 1 to many</p>
+        <p><strong>One to many.</strong> Inline styles are 1 to 1 for element styles, while a class has a 1 to many relationship</p>
         <p><strong>Flexible and fast. </strong> Atomic classes are faster to type and easier to read and can leverage the benefits of framework level variables (unlike inline)</p>
       </section>
 
       <section>
-        <h2>Is this semantic?</h2>
-        <p><strong>Yes!</strong> Classes don't affect HTML semantics, and please please please use well structured, accessible, semantic HTML</p>
+        <h2>Does this affect accessibility?</h2>
+        <p><strong>Nope!</strong> Presentational classes have no effect on HTML semantics</p>
+        <p>And please please please use well structured, accessible, semantic HTML</p>
         <p>Great read: <a target='_blank' href='http://nicolasgallagher.com/about-html-semantics-front-end-architecture/'>About HTML Semantics and Front-End Architecture</a>, by <a target='_blank' href='https://twitter.com/necolas'>@necolas</a></p>
       </section>
 
       <section>
         <h2>Aren’t you just moving complexity to the markup?</h2>
-        <p>Yes, and that's OK!</p>
-        <p>It's more practical — it's easier for multi-developer teams to rearrange pre-built classes vs. perform CSS alchemy</p>
+        <p><strong>Yes!</strong> And that's OK!</p>
+        <p>It's more practical — it's easier for multi-developer teams to rearrange pre-built classes than perform CSS alchemy</p>
         <p>Revisit "Encapsulation is your best friend" slide 😛</p>
       </section>
 
@@ -267,13 +264,8 @@
 
       <section>
         <h2>Dogma is dangerous</h2>
-        <p>We should continually examine and update our best practices</p>
-        <p>I'm not saying Atomic CSS is perfect, but it's definitely worth a try (and also super fun!)</p>
-        <blockquote class='mt3'>
-          <p>What the hell do you have to lose?</p>
-          <footer>- Donald Trump 😳</a>
-          </footer>
-        </blockquote>
+        <p><strong>And unnecessary.</strong> Instead of dancing-angels-on-the-head-of-a-pin debates, let's just continuously evaluate and update best practices based on our core principle: user-centered decision making</p>
+        <p>What have you got to lose?</p>
       </section>
 
       <section class='center tc'>
@@ -282,8 +274,7 @@
       </section>
 
       <section class='center tc'>
-        <img src="img/peace-emoji.gif" alt="thanks!">
-        <p class='mt1'>Thanks!</p>
+        <img src="img/peace-emoji.gif" alt="thanks!" width='150' height='150'>
       </section>
 
     </div>
